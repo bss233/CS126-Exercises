@@ -1,19 +1,19 @@
 # A simple English to Pig Latin Translator
-wordToTranslate = input("Please enter a word to translate: ").lower()
+word_to_translate = input("Please enter a word to translate: ").lower()
 vowels = ['a', 'e', 'i', 'o', 'u']
 tempWord = ''
-length = len(wordToTranslate)
+length = len(word_to_translate)
 counter = 0
-translatedWord = wordToTranslate
-if wordToTranslate[0] in vowels:
-    translatedWord += 'yay'
+translated_word = word_to_translate
+if word_to_translate[0] in vowels:
+    translated_word += 'yay'
 else:
-    for letter in wordToTranslate:
+    for letter in word_to_translate:
         if letter not in vowels:
             counter += 1
             tempWord += letter
-            translatedWord = wordToTranslate[counter:length]
+            translated_word = word_to_translate[counter:length]
         else:
-            translatedWord = (translatedWord + tempWord + 'ay').lower()
+            translated_word = (translated_word + tempWord + 'ay').lower()
             break
-print(translatedWord.capitalize())
+print(translated_word.capitalize())
