@@ -6,8 +6,8 @@ def word_pick():
     word_list = ['apple', 'banana', 'cranberry', 'dragonfruit', 'grapefruit',
                  'kiwi', 'lemon', 'melon', 'nectarine', 'orange', 'pineapple',
                  'raspberry', 'tangerine', 'watermelon']
-    answer = word_list[random.randint(0, 13)]
-    return answer
+    # answer = word_list[random.randint(0, 13)]
+    return word_list[0]
 
 
 def take_a_guess():
@@ -20,51 +20,58 @@ def take_a_guess():
 
 
 def find_number_of_occurences(word, letter):
-    list_word = list(word)
+    list_word = create_list_word(word)
     locations = []
     while letter in list_word:
         index = list_word.index(letter)
         locations.append(index)
         list_word.insert(index, '*')
         list_word.remove(letter)
-    print('locations :' + str(locations))
     return locations
 
 
+def create_list_word(word):
+    list_word = []
+    word_length = len(word)
+    for i in range(word_length):
+        list_word.append(' _')
+    return list_word
+
+
 def update_word(guess, word, indexes):
-    list_word = list(word)
+    list_word = create_list_word(word)
     list_length = len(indexes)
     for i in range(list_length):
         position = indexes[i]
         list_word[position] = guess
-    updated_word = ''.join(list_word)
-    print('Updated Word: ' + updated_word)
-    return updated_word
+    return list_word
+
+
+def status(word, strikes, letters):
+        print(str((6 - strikes)) + ' Strikes remaining!')
+        print(' ' + word + ' ')
+        print('Guessed letters: ' + letters)
 
 
 def main():
     answer = word_pick()
+    list_word = create_list_word(answer)
     strikes = 0
     guessed_letters = ''
-    letters_to_guess = ''
-    word_length = len(answer)
-    for i in range(word_length):
-        letters_to_guess += ' _ '
-    completed_word = letters_to_guess
-    print('Your word is: ' + completed_word)
-    while completed_word != answer:
+    string_word = ''.join(list_word)
+    status(string_word, strikes, guessed_letters)
+    while string_word != answer:
         if strikes < 6:
             current_guess = take_a_guess()
             guessed_letters += (' ' + current_guess)
             if current_guess in answer:
                 locations = find_number_of_occurences(answer, current_guess)
-                completed_word = update_word(current_guess, completed_word,
-                                             locations)
+                temp_word = update_word(current_guess, string_word,
+                                        locations)
+                string_word = ''.join(temp_word)
             else:
                 strikes += 1
-            print(str((6 - strikes)) + ' Strikes remaining!')
-            print(' ' + completed_word + ' ')
-            print('Guessed letters: ' + guessed_letters)
+            status(string_word, strikes, guessed_letters)
     print('Game Over!')
 
 
