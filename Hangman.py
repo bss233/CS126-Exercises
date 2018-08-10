@@ -3,9 +3,11 @@ import random
 
 def word_pick():
     """ Picks a word from the given list to use for the game of Hangman """
-    word_list = ['apple', 'banana', 'cranberry', 'dragonfruit', 'grapefruit',
-                 'kiwi', 'lemon', 'melon', 'nectarine', 'orange', 'pineapple',
-                 'raspberry', 'tangerine', 'watermelon']
+    word_list = ['apple', 'banana', 'cranberry', 'dragonfruit', 'elderberry',
+                 'fig', 'grapefruit', 'honeydew', 'jackfruit', 'kiwi', 'lemon',
+                 'mango', 'nectarine', 'orange', 'pineapple', 'quince',
+                 'raspberry', 'strawberry', 'tangerine', 'watermelon',
+                 'zucchini']
     answer = word_list[random.randint(0, 13)]
     return answer
 
@@ -73,6 +75,8 @@ def main():
                 strikes += 1
             player_answer = ''.join(working_word)
             status(player_answer, strikes, guessed_letters)
+        else:
+            break
     print('Game Over!')
 
 
