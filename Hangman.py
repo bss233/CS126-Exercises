@@ -23,7 +23,9 @@ def find_number_of_occurences(word, letter):
     list_word = list(word)
     locations = []
     while letter in list_word:
-        locations.append(list_word.index(letter))
+        index = list_word.index(letter)
+        locations.append(index)
+        list_word.insert(index, '*')
         list_word.remove(letter)
     print('locations :' + str(locations))
     return locations
@@ -53,7 +55,7 @@ def main():
     while completed_word != answer:
         if strikes < 6:
             current_guess = take_a_guess()
-            guessed_letters += current_guess
+            guessed_letters += (' ' + current_guess)
             if current_guess in answer:
                 locations = find_number_of_occurences(answer, current_guess)
                 completed_word = update_word(current_guess, completed_word,
