@@ -25,6 +25,12 @@ def take_a_guess():
 
 
 def find_number_of_occurences(word, guess):
+    """ Finds the number of times a character appears in a given word
+    :param word: The word to be checked, as a list of characters
+    :param guess: The character to be searched for
+    :return: Returns a list that contains the indices of each character in the
+    given word
+    """
     locations = []
     search_for = guess
     for index, letter in enumerate(word):
@@ -34,6 +40,12 @@ def find_number_of_occurences(word, guess):
 
 
 def create_blank(word):
+    """ Creates a list that contains '_' equal to the number of characters in
+    the given word
+    :param word: A word in string form to be converted into a string of '_'s
+    :return: Returns a list containing only '_'s equal to the number of
+    characters in the given word
+    """
     list_word = list(word)
     list_length = len(word)
     for i in range(list_length):
@@ -42,6 +54,13 @@ def create_blank(word):
 
 
 def update_word(letter, word, indexes):
+    """ Takes in a word as a list to update with a given letter at given
+    indexes
+    :param letter: The letter to add as a character
+    :param word: The word to update as a list
+    :param indexes: The location of each letter as integers in a list
+    :return: Returns a list that contains the updated word
+    """
     list_length = len(indexes)
     for i in range(list_length):
         position = indexes[i]
@@ -50,10 +69,16 @@ def update_word(letter, word, indexes):
 
 
 def status(word, strikes, letters):
+    """
+    :param word: List, The word that the user has guessed so far
+    :param strikes: Int, The numbers of strikes the user has used so far
+    :param letters: String, The letters the user has already guessed
+    """
     spaced_word = ' '.join(word)
     print(str((6 - strikes)) + ' Strikes remaining!')
     print('Guessed letters: ' + letters)
     print(spaced_word)
+    print('\n')
 
 
 def main():
@@ -76,6 +101,7 @@ def main():
             player_answer = ''.join(working_word)
             status(player_answer, strikes, guessed_letters)
         else:
+            print('The word was: ' + answer)
             break
     print('Game Over!')
 
