@@ -26,8 +26,8 @@ def take_a_guess():
 
 def find_number_of_occurences(word, guess):
     """ Finds the number of times a character appears in a given word
-    :param word: The word to be checked, as a list of characters
-    :param guess: The character to be searched for
+    :param list word: The word to be checked
+    :param character guess: The character to be searched for
     :return: Returns a list that contains the indices of each character in the
     given word
     """
