@@ -49,4 +49,43 @@ def set_type_of_dice():
     return type_of_dice.upper()
 
 
-print(set_type_of_dice())
+def percentile_roll(number_of_dice):
+    results = []
+    for iteration in range(number_of_dice):
+        current_roll = 10*(random.randint(1, 10))
+        results.append(current_roll)
+    average_results = (sum(results)/number_of_dice)
+    results.append(average_results)
+    return results
+
+
+def roll_dice(dice_type, number_of_dice):
+    type_number = int(dice_type[1:])
+    results = []
+    for iteration in range(number_of_dice):
+        current_roll = random.randint(1, type_number)
+        results.append(current_roll)
+    sum_results = sum(results)
+    results.append(sum_results)
+    return results
+
+
+def main():
+    type_of_dice = set_type_of_dice()
+    number_of_dice = set_number_of_dice()
+    if type_of_dice == 'D100':
+        roll_results = percentile_roll(number_of_dice)
+        roll_sum = roll_results[-1]
+        roll_results.pop()
+        print('Average: ', roll_sum)
+        print('Roll Results: ', roll_results)
+    else:
+        roll_results = roll_dice(type_of_dice, number_of_dice)
+        roll_sum = roll_results[-1]
+        roll_results.pop()
+        print('Roll Sum: ',  roll_sum)
+        print('Roll Results: ', roll_results)
+
+
+if __name__ == "__main__":
+    main()
