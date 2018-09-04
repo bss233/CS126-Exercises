@@ -1,0 +1,15 @@
+- - - Hangman - - -
+Simple hangman game with a hardcoded list of possible words (they're all fruits) but it can easily be changed use words from a file.
+
+Input: Takes single letter strings (Characters) from the user and compares them to the randomly selected word.
+	*** Only allows the user to input a single alphabet character; no symbols and no multicharacter strings
+	
+Output: Runs on a loop and constantly updates the user on their status: Their guessed letters, strikes (wrong guesses), and correctly guessed letters.
+
+My main method could be cleaner; feel free to change some stuff into additional methods to help it out.
+
+Refactor:
+Try and add a way to prevent the user from being able to guess the same incorrect letter multiple times. IE; if you guess F and it isn't in the word and you guess F again, it doesn't give you another strike.
+Challenge:
+Could also add some ASCII art instead of strikes but I suck at that some it's up to you!
+As stated at the beginning you could modify this to pull a random word from a given file; feel free to try doing this or even expand the hardcoded list.

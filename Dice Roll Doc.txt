@@ -1,0 +1,15 @@
+- - - Dice Roll - - -
+Generates random dice rolls for D4, D6, D8, D10, D12, D20, and D100. Allows for up to 100 of the same die to be rolled. Prints each roll as well as the total sum of all rolls or the average roll for the D100.
+
+Input: Takes input from the user in the form of a string to find what type of dice to roll. IE; D6. Then take input from the user in the form of an int to find out how many of that type of die to roll.
+	*** Checks to make sure the first input is the form D# and the second input is a single integer from 1 to 100
+	
+Output: Prints a list of all rolls and a list that contains the sum of all rolls.
+
+Refactor:
+My main method is again, kinda spaghetti. The way I stored my results, using a list could definitely done better.
+
+Challenge:
+Make a main menu.
+Make a way to allow the user to roll more than 1 type of die.
+Make a away to run the app again so you don't need to relaunch it.
