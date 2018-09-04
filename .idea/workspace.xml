@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d3ae0723-f51e-472d-b4b3-4b129b6c5ec2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dice Roll.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hangman.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pig Latin Translator.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,26 +49,27 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="346" />
-          <entry key="py" value="13794" />
-          <entry key="txt" value="19" />
+          <entry key="py" value="14198" />
+          <entry key="txt" value="87" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="19" />
-          <entry key="Python" value="14140" />
+          <entry key="PLAIN_TEXT" value="87" />
+          <entry key="Python" value="14544" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
+          <entry key="project.closed" value="8" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="2" />
+          <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -88,10 +86,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Dice Roll/Dice Roll.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Basic Apps/Tip Calculator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-375" />
+            <state relative-caret-position="275">
+              <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+            </state>
           </provider>
         </entry>
       </file>
@@ -116,13 +121,15 @@
         <option value="$PROJECT_DIR$/Lists.py" />
         <option value="$PROJECT_DIR$/Hangman.py" />
         <option value="$PROJECT_DIR$/Dice Roll.py" />
+        <option value="$PROJECT_DIR$/Basic Apps/Tip Calculator.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="1358" />
-    <option name="width" value="1390" />
-    <option name="height" value="1756" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-12" />
+    <option name="y" value="-12" />
+    <option name="width" value="2762" />
+    <option name="height" value="1770" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -257,7 +264,14 @@
       <option name="project" value="LOCAL" />
       <updated>1535655495069</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Moved stuff and added a comment about the loop in the tip calculator">
+      <created>1536087306712</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1536087306712</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView">
@@ -270,9 +284,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="679" y="0" width="695" height="878" extended-state="0" />
+    <frame x="-6" y="-6" width="1381" height="885" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.288854" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.143613" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -301,7 +315,8 @@
     <MESSAGE value="Fully functional" />
     <MESSAGE value="Added more fruits" />
     <MESSAGE value="Completed Dice Roll" />
-    <option name="LAST_COMMIT_MESSAGE" value="Completed Dice Roll" />
+    <MESSAGE value="Moved stuff and added a comment about the loop in the tip calculator" />
+    <option name="LAST_COMMIT_MESSAGE" value="Moved stuff and added a comment about the loop in the tip calculator" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Tip Calculator.py">
@@ -325,30 +340,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Pig Latin Translator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Hangman.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2700">
-          <caret line="108" selection-start-line="108" selection-end-line="108" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Dice Roll.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1458">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Pig Latin Translator.py" />
+    <entry file="file://$PROJECT_DIR$/Hangman.py" />
+    <entry file="file://$PROJECT_DIR$/Dice Roll.py" />
     <entry file="file://$PROJECT_DIR$/Dice Roll/Dice Roll.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Basic Apps/Tip Calculator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-375" />
+        <state relative-caret-position="275">
+          <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+        </state>
       </provider>
     </entry>
   </component>
