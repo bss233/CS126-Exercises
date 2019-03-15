@@ -1,3 +1,6 @@
+#This is to show how git shows additions
+
+
 # Function 0: Calculating a Checksum
 #
 # A checksum is a way to verify that data transmission has occurred without
@@ -85,13 +88,5 @@ def is_prime(num):
 # ones... etc.
 #
 # Hint: This problem is hard!
-def all_parens_matched(aString):
-    counter = 0
-    for char in aString:
-        if char == '(':
-            counter += 1
-        elif char == ')':
-            counter -= 1
-        if counter < 0:
-            return False
-    return counter == 0
+
+# Removed code to add to a different file
